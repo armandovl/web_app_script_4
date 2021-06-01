@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <!--Importar los iconos de google-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+  <!--instalamos jquery-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+   
+   <?!= include("page-css");?>
+
+
+</head>
+<body>
+  
+  <div class="container section">
+  	<div class="row">
+  		<form class="col s12">
+  			<div class="row card-panel">
+            	
+              <div class="input-field col s12 m6 l4">
+            	<!--este es para un icono-->
+            	<i class="material-icons prefix">person_pin</i>
+            	<!--este es para un icono-->
+            	<input id="name" type="text" name="Nombre" class="validate" required="" aria-required="true">
+            	<label for="name">Escribe tu nombre</label>
+          		</div>
+
+              <div class="input-field col s12 m6 l4">
+            	<!--este es para un icono-->
+            	<i class="material-icons prefix">person_pin</i>
+            	<!--este es para un icono-->
+            	<input id="name2" type="text" name="Nombre2" class="validate" required="" aria-required="true">
+            	<label for="name2">Escribe tu nombre</label>
+          		</div>
+                          
+   			</div> <!--tarjeta fin-->
+         	
+          
+  		</form>
+  
+                <button class="btn" id="boton">Enviar</button> <!-- importante el boton va fuera del form -->  
+  	</div>
+  </div>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+<?!= include("page-js");?>
+</body>
+</html>
