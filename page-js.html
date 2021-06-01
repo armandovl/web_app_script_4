@@ -1,4 +1,26 @@
    <script type="text/javascript">
+   
+       // inicializar select
+   	$(document).ready(function(){
+    $('select').formSelect();
+	});
+
+
+	// inicializar fecha
+	$(document).ready(function(){
+    $('.datepicker').datepicker({
+    	setDefaultDate: true,
+    	defaultDate: new Date(),
+    });
+  	});
+
+  	//inicializar hora
+  	  $(document).ready(function(){
+    $('.timepicker').timepicker();
+  });
+       
+       
+     
 
     document.getElementById("boton").addEventListener("click",enviarSheet);
     
@@ -16,6 +38,25 @@
       
       }
       
-   
+    
+    function dependiente(){
+    
+      alert("empezamos");
+    
+      var acomparar= document.getElementById("select2").value;
+      
+      alert(acomparar);
+
+      google.script.run.dependiente2(acomparar); // *esta linea ejecuta funciones del .gs el nombre1 pasa como argumento
+          
+      
+    }
+    
+    function inertext(){
+       alert("conectado")
+       var x = document.getElementById("select2").innerHtml='<option value="" disabled selected>ELije</option>';
+       alert(x);
+    
+    }
       
    </script>
