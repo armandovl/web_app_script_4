@@ -30,8 +30,13 @@ function dependiente2(acomparar){
   var ws= ss.getSheetByName('Sheet1');
   
   ws.getRange(1,12).setValue([acomparar]);
+
+ if(acomparar=="listaOcho"){
+   return listaOcho;
+ } else{
+   return listaSeis;
+ }
   
-  return listaOcho;
   
 
 }
@@ -91,7 +96,7 @@ function hacerClick(compilado){
   
   //llamar la hoja
   var ss=SpreadsheetApp.openById("1anGeMqQlSveaBCfEW5E_IRq_ZT6Q1gSyc4LOpdm_Cuk");  
-  var ws= ss.getSheetByName('Sheet2');
+  var ws= ss.getSheetByName('Sheet4');
   
   ws.appendRow([compilado.nombreUno,compilado.nombreDos,new Date()]); //aniade una columna /*importante ver como se llaman
   

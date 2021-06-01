@@ -25,22 +25,23 @@
     document.getElementById("boton").addEventListener("click",enviarSheet);
     
     function enviarSheet(){
-    
+    alert("que meirda");
+
      var compilado={}; //variable que compila la informacion de varias variables
     
-      compilado.nombreUno= document.getElementById("name").value; //ya nada mas se descomponer
-      compilado.nombreDos= document.getElementById("name2").value;
+      compilado.nombreUno= document.getElementById("select1").value; //ya nada mas se descomponer
+      compilado.nombreDos= document.getElementById("select2").value;
+
+      alert(compilado.nombreUno);
 
       google.script.run.hacerClick(compilado);  // *esta linea ejecuta funciones del .gs el nombre1 pasa como argumento
       
-      document.getElementById("name").value="limpio";
-      document.getElementById("name2").value="limpio";
-      
+    
       }
       
     
     function dependiente(){
-    
+
       alert("empezamos");
     
       var acomparar= document.getElementById("select2").value;
@@ -52,9 +53,9 @@
       
     }
     
-    function inertext(){
+    function inertexto(){
        alert("conectado")
-       var x = document.getElementById("select2").innerHtml='<option value="" disabled selected>ELije</option>';
+       var x = document.getElementById("fff").innerHtml='<option value="" disabled selected>ELije</option>';
        alert(x);
     
     }
